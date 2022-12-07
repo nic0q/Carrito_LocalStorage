@@ -26,9 +26,14 @@ const [cart, setCart] = useState(localStorage.getItem("cart") ? JSON.parse(local
 ```
 * En el mismo componente crear funciones para añadir items, donde los atributos se pasan como parametro (Puede hacerse de otra forma, pero personalmente prefiero esta)
 
-Por ejemplo aquí se tiene un objeto pizza {name, id, img, price}
+Por ejemplo aquí se tiene un objeto pizza {name, id, img, price} que se utiliza para otro componente FoodCart, la funcion add se pasa como parametro
 
-![image](https://user-images.githubusercontent.com/91075814/206051531-0c028213-d290-4f07-8750-1971418026ab.png)
+![image](https://user-images.githubusercontent.com/91075814/206053090-4a6555d0-aee0-4cab-893f-6419d1c1a50f.png)
+
+Componente foodcart
+
+![image](https://user-images.githubusercontent.com/91075814/206053391-87e9957f-d3aa-4cb4-a98a-2d2b6cf2801f.png)
+
 
 Y la función add crea el objeto del tipo { } con los atributos y simplemente la pasa a la función importada en utilities y además se setea el Hook Cart para tenerlo actualizado en el componente
 
